@@ -40,7 +40,7 @@ Browser / API Client
 ↓
 app.py (Streamlit UI)
 ↓ HTTP POST /analyse
-main.py (FastAPI — port 8000)
+api.py (FastAPI — port 8000)
 ↓
 agent.py (LangChain Agent)
 ↓              ↓
@@ -55,7 +55,7 @@ Sentiment + Buy/Hold/Sell Signal
 ## 📁 Project Structure
 stocksense-ai/
 ├── agent.py        # LangChain agent with tools
-├── main.py         # FastAPI REST API
+├── api.py         # FastAPI REST API
 ├── app.py          # Streamlit UI
 ├── .env            # API keys (never committed)
 ├── .gitignore      # Ignores venv, .env, pycache
