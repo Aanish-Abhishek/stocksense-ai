@@ -51,12 +51,3 @@ agent = create_agent(
         "4. Signal: Buy / Hold / Sell with reasoning"
     ),
 )
-
-result = agent.invoke({
-    "messages": [{
-        "role": "user",
-        "content": "Analyse the stock RELIANCE.NS"
-    }]
-})
-
-print(result["messages"][-1].content)
